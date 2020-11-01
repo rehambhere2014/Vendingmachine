@@ -11,21 +11,16 @@ const moneyInput = document.getElementById("money");
 const formInput = document.getElementById("display");
 const price = document.getElementById('price');
 let message = document.querySelector('.circle');
-console.log(message)
 formInput.addEventListener('change', e => {
 
         vendingMachine1.takeMoney(e.target.value);
-
-    
- 
- 
 })
 
-function check(elem) {
-    if(!elem.test("^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$") {
-      alert('Error in data – use the format dd.dd (d = digit)');
-    }
-  }
+// function check(elem) {
+//     if(!elem.test("^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$") {
+//       alert('Error in data – use the format dd.dd (d = digit)');
+//     }
+//   }
   
 //=============
 //  DOM Listeners
