@@ -1,0 +1,18 @@
+[1] input money 
+[2] onchange money 
+[3] select product what you want 
+[4] if select product not input money you see message  
+[5] if select any product not found code  see message not found code if your stock its empty you can see message for that
+[6] when click x its clear input message all of things
+[7] when i click ok 
+    -case1: total-price if change <0 you not input ength money
+    -case2: if change >0 you see message how money back
+    -case3: if cahnge ==0 you see message no have money back
+    -case4: if select any product not found or out stock you see message for that
+    -cae5: all product save in localstorge
+    -case:if select product not money you can see that 
+    -case7: when select product remove in stock 
+
+
+
+
