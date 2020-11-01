@@ -255,7 +255,7 @@ class VendingMachine {
 
 }
 //=============
-//  Soda Class
+//  Snak Class
 //=============
 class Snak {
     constructor(name, price, stock, image, code) {
