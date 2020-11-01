@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: skyblue;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.machine {
+    background-color: rgb(66, 73, 83);
+    /* background:black; */
+    width: 43rem;
+ 
+    padding:30px;
+    margin:0 auto;
+    position: relative;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows:repeat(3, auto);
+    grid-template-areas: "items items"
+  
+    
+    ;
+    height: auto;
+    overflow-Y: scroll;
+   
+}
+.items{
+    background-color: rgb(192, 192, 192);
+    display: grid;
+    grid-area: "items";
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:repeat(5, 1fr);
+    padding:10px;
+    grid-gap: 2rem;
+}
+.item{
+    border:1px solid #ccc;
+    padding:5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.order{
+    background-color: rgb(100, 108, 119);
+    grid-area: "order";
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "container" "coins";
+ 
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+    grid-area: "container";
+}
+
+.visualize {
+    background-color: rgb(79, 192, 232);
+    width: 100%;
+    height: 2em;
+    border-radius: 50px;
+}
+
+input {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.1em;
+}
+
+.btn {
+    background-color: rgb(169, 177, 188);
+    height: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    border: 0.2px solid rgb(138, 146, 156);
+    border-radius: 2px;
+}
+
+.coins {
+    background-color: rgb(66, 73, 83);
+    width: 7em;
+    margin: auto;
+    grid-area: "coins";
+}
+
+.money {
+    background-color: rgb(169, 177, 188);
+    width: 5em;
+    height: 5em;
+    margin: 1em auto;
+}
+
+.grab{
+    background-color: rgb(100, 108, 119);
+    height: 8rem;
+    border-radius: 10px;
+    grid-area: "grab";
+}
+.rectangle {
+    background-color: rgb(169, 177, 188);
+    width: 80%;
+    height: 3em;
+    margin: 3em auto;
+    border-radius: 15px;
+}
+
+.image {
+    width: 5em;
+    height: auto;
+}
+
+.column{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  padding: 0;
+  list-style: none !important;
+  height: 80px;
+  text-align: center;
+
+}
+
+
+.can ,.snacks{
+    height:50px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .ok{
+      background:green;
+      color:white;
+      cursor: pointer;
+      border: 0.2px solid rgb(138, 146, 156);
+      border-radius: 2px;
+      outline: none;
+
+  }
+  #refill{
+      background-color: orange;
+      color:white;
+      outline: none;
+      border: 0.2px solid rgb(138, 146, 156);
+      border-radius: 2px;
+      padding:10px;
+      cursor: pointer;
+  }
