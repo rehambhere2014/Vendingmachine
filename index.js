@@ -22,7 +22,7 @@ formInput.addEventListener('change', e => {
 })
 
 function check(elem) {
-    if(!elem.value.match(/^\d?\d\.\d\d$/)) {
+    if(!elem.test("^\$?([1-9]{1}[0-9]{0,2}(\,[0-9]{3})*(\.[0-9]{0,2})?|[1-9]{1}[0-9]{0,}(\.[0-9]{0,2})?|0(\.[0-9]{0,2})?|(\.[0-9]{1,2})?)$") {
       alert('Error in data – use the format dd.dd (d = digit)');
     }
   }
